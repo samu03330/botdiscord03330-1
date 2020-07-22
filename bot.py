@@ -32,7 +32,7 @@ async def set_reaction_role(ctx, message_id=None, role_id=None):
             break
 
         except:
-            pass
+            pass 
 
     if botdata.reaction_message == None:
         await ctx.send("Non è stato possibile trovare il messaggio indicato.")
@@ -184,4 +184,5 @@ async def unban(ctx, *, member):
 
 
 client.run(os.environ['discord_token'])
+
 
