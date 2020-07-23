@@ -118,12 +118,6 @@ async def clear(ctx, amount : int):
 
 
 
-@clear.error
-async def clear_error(ctx, error):
-    if isinstance(error, commands.MissingRequiredArgument ):
-        await ctx.send('inserisci il numero di messaggi da eliminare')
-
-
 
 
 @client.event
